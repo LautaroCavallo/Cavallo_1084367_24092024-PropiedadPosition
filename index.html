@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emprendimiento de Velas Aromáticas</title>
+    <title>Velas Aromáticas - Luz de Esencia</title>
     <style>
         /* Estilo general */
         body {
@@ -14,7 +14,7 @@
 
         /* Estilo del contenedor nav */
         nav {
-            background-color: #333;
+            background-color: #444;
             position: fixed;
             top: 0;
             left: 0;
@@ -51,7 +51,7 @@
 
         /* Efecto hover en los enlaces */
         nav ul li a:hover {
-            color: #f0a500;
+            color: #ffcc00;
         }
 
         /* Ajustar contenido con margen superior para evitar superposición con el menú */
@@ -64,28 +64,79 @@
         nav ul li:first-child {
             margin-left: 50px;
         }
+
+        /* Estilo de las secciones de contenido */
+        section {
+            padding: 50px;
+            text-align: left;
+            background-color: #f9f9f9;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Estilo de los títulos de las secciones */
+        h2 {
+            color: #333;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Menu -->
+    <!-- Menú de navegación -->
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
             <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>°
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
     <!-- Contenido de la página -->
     <div class="content">
-        <h1>Bienvenidos a nuestro emprendimiento de velas aromáticas</h1>
-        <p>Explora nuestras exquisitas velas hechas a mano con esencias naturales.</p>
+        <section id="inicio">
+            <h1>Bienvenidos a Luz de Esencia</h1>
+            <p>Nuestras velas aromáticas son hechas a mano con esencias naturales que inspiran calma y bienestar. En Luz de Esencia, creemos en la magia de los aromas y su capacidad para transformar espacios.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <ul>
+                <li>Vela de Lavanda - $15</li>
+                <li>Vela de Vainilla y Coco - $18</li>
+                <li>Vela de Jazmín - $20</li>
+                <li>Pack de Aromas Frutales - $50</li>
+            </ul>
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un pequeño emprendimiento local dedicado a crear velas aromáticas de alta calidad. Cada vela es fabricada con amor y dedicación para asegurarnos de que nuestros clientes reciban un producto que eleve sus sentidos y mejore su ambiente.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o te gustaría hacer un pedido personalizado? Contáctanos a través de nuestro correo electrónico: <a href="mailto:info@luzdeesencia.com">info@luzdeesencia.com</a></p>
+        </section>
     </div>
+
+    <!-- Pie de página -->
+    <footer>
+        &copy; 2024 Luz de Esencia - Todos los derechos reservados.
+    </footer>
 
     <!-- Comentario sobre el uso de z-index -->
     <!-- El z-index es necesario en este caso para asegurarse de que el menú de navegación se superponga al contenido cuando se desplaza. -->
-
 </body>
 </html>
